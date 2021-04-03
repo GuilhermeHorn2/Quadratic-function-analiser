@@ -1,0 +1,21 @@
+import  math
+print('Put the coeficients in order:')
+a = int(input(':'))
+b = int(input(':'))
+c = int(input(':'))
+
+delta = pow(b,2) - 4*a*c
+root = (-b + math.sqrt(delta))//(2*a)
+root2 = (-b - math.sqrt(delta))//(2*a)
+
+if a == 0:
+    print('This is not an quadratic equation')
+elif delta < 0:
+    print('This equation has no roots is the real numbers')
+elif delta == 0:
+    print('This equation has just one root on the real numbers')
+    print(root)
+else:
+    print('This equation has two roots on the real numbers')
+    print(root,root2)
+
